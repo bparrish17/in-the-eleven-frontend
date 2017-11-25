@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div id="page">
-        <Matchday />
+        <Player />
       </div>
     );
   }
