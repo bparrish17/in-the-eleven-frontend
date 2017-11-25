@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../../Matchday/Header'
 import BigNumberStat from './BigNumberStat'
 import PieGraph from './PieGraph'
 import GamesGoalsAssists from './GamesGoalsAssists'
@@ -13,17 +12,17 @@ class Stats extends Component {
       marginLeft: "15%"
     }
     let primaryColor;
-    if(chosenTeam == 'club_team') primaryColor = { border: "0.08em solid #fde200" }
-    else if(chosenTeam == 'nat_team') primaryColor = { border: "0.08em solid #c3182c" }
+    if(chosenTeam === 'club_team') primaryColor = { border: "0.08em solid #fde200" }
+    else if(chosenTeam === 'nat_team') primaryColor = { border: "0.08em solid #c3182c" }
 
     return (
         <div>
           <GamesGoalsAssists stats={chosenStats} />
           <div className="stats-container clearfix">
             <div id="shots-header"><text>On Target</text></div>
-            <BigNumberStat style={shotsStyle} label="Shots" stat="44" />
+            <BigNumberStat style={shotsStyle} label="Shots" stat={chosenStats.shots} />
             <div id="shots-on-target-pie">
-              <PieGraph color={primaryColor} stat={'Shots'} label={'On Target'} value={'78'} align={'right'}/>
+              <PieGraph color={primaryColor} value={chosenStats.on_target} align={'right'}/>
             </div>
           </div>
         </div>

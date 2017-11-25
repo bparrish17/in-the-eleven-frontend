@@ -5,7 +5,7 @@ import '../../App.css'
 
 class PieGraph extends Component {
     render() {
-        const {color, stat, label, value, align} = this.props
+        const {color, value, align} = this.props
         const alignGraph = { float: align }
         return (
             <div className={"c100 p" + value} style={alignGraph}>

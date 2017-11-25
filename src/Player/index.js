@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PlayerOverview from './Overview'
-import Header from '../Matchday/Header'
 import PlayerStats from './Stats'
 import PlayerInfo from './Info'
 import '../App.css';
@@ -42,12 +41,16 @@ class Player extends Component {
       club_team_stats: {
         games: 13,
         goals: 6,
-        assists: 4
+        assists: 4,
+        shots: 44,
+        on_target: 52
       },
       nat_team_stats: {
         games: 14,
         goals: 8,
-        assists: 6
+        assists: 6,
+        shots: 32,
+        on_target: 72
       }
     }
     return (
@@ -59,7 +62,7 @@ class Player extends Component {
           <div className="player-columns col-xs-6">
             <PlayerInfo playerData={testPlayer.info}/>
           </div>
-          
+
           {/* Stats Component in Second Column With Stateful Header */}
           <div className="player-columns col-xs-6">
             <div id="gameday-header-container">
