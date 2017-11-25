@@ -1,0 +1,96 @@
+/* ================ Player Component ===============*/
+/* Header */
+  .stats-container {
+    width: 100%;
+    margin-top: 20px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  .stats-container.clearfix {
+    margin-right: 10%;
+  }
+  
+  #stats-games {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 4%;
+  }
+  #stats-goals {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  #stats-assists {
+    /* padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom-right-radius: 20%; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  .stats-goals-assists {
+    float: left;
+    padding-top: 10%;
+    padding-bottom: 6%;
+    margin-bottom: 25px;
+    width: 30%;
+    /* border-radius: 20%; */
+  }
+  .stats-goals-assists :first-child {
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
+  .stats-goals-assists :last-child {
+    font-weight: 400;
+    font-size: 44px;
+  }
+  .big-number-stat {
+    float: left;
+    padding-top: 0;
+    padding-bottom: 6%;
+    margin-bottom: 25px;
+    width: 30%;
+    border: none;
+    border-right: solid 1px #dddddd;
+  }
+  .big-number-stat :first-child {
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
+  .big-number-stat :last-child {
+    font-weight: 400;
+    font-size: 44px;
+    padding-top: 16%;
+  }
+  
+  #shots-header {
+    padding-left: 11%;
+    width: 50%;
+    float: right;
+    height: 40px;
+    font-weight: 100;
+  }
+  
+  #shots-on-target-pie {
+    margin-right: 20%;
+  }
+  
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

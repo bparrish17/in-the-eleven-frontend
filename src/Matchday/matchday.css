@@ -1,0 +1,64 @@
+/* ================ General Header ==================*/
+
+.header-tabs {
+    margin-right: 5px;
+    float: right;
+    font-weight: 100;
+  }
+
+/* ================== Matchday Component ================ */
+
+#matchday-container {
+    margin-left: 45px;
+  }
+  
+  #gameday-header-container {
+    border-bottom: #dddddd solid 1px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding-top:10px;
+  }
+  
+  /* ================= FollowedPlayer Component ================ */
+  #player-container {
+    width: 800px;
+    height: 50px;
+  }
+  
+  .player-info {
+    height: 100%;
+    font-size: 16px;
+    padding-top: 1.7%;
+  }
+  
+  #nt-team-icon {
+    width: 60px;
+    height: 100%;
+  }
+  
+  #club-team-icon {
+    width: 60px;
+  }
+  
+  #team-icon-img {
+    width: 100%;
+    max-height: 120%;
+  }
+  
+  #name {
+    width: 30%;
+  }
+  
+  #opponent {
+    width: 40%;
+  }
+  
+  #gametime {
+    width: 15%;
+  }
+  
+  #player-separator {
+    height: 10px;
+  }
+  
