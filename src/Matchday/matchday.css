@@ -6,59 +6,140 @@
     font-weight: 100;
   }
 
+.btn-no-click {
+    /* btn formatting */
+    border-radius: 0;
+    margin-left: -1px;
+    position: relative;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
 /* ================== Matchday Component ================ */
 
 #matchday-container {
+    width: 800px;
     margin-left: 45px;
-  }
+}
+
+#matchday-players {
+    width: 100%;
+}
+#matchday-matches {
+    width: 100%;
+}
   
-  #gameday-header-container {
+#matchday-header-container {
     border-bottom: #dddddd solid 1px;
     margin-bottom: 10px;
     width: 100%;
     font-size: 20px;
     padding-top:10px;
-  }
+}
+
+.team-icon-img {
+    width: 100%;
+    max-height: 120%;
+}
+
+/* ================== Match Component ================ */
+
+.match-container {
+    width: 100%;
+}
+
+#match-score-container {
+    width: 100%;
+    height: 50px;
+}
+
+#match-score-container.li {
+    
+}
+
+.match-info {
+    padding-top: 1.7%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.team-icon {
+    width: 60px;
+    height: 100%;
+}
+
+.team-name {
+    font-weight: 700;
+    width: 30%;
+}
+
+.team-lineup {
+    height: 40px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+.team-lineup :first-child {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.team-lineup :last-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.score {
+    width: 7.18%;
+    padding-top: 1%;
+    font-size: 24px;
+    background-color: #dddddd;
+}
+
+#match-time {
+    text-align: center;
+    width: 11.25%;
+}
+
   
-  /* ================= FollowedPlayer Component ================ */
-  #player-container {
+/* ================= FollowedPlayer Component ================ */
+#player-container {
     width: 800px;
     height: 50px;
-  }
-  
-  .player-info {
+}
+
+.player-info {
     height: 100%;
     font-size: 16px;
     padding-top: 1.7%;
-  }
-  
-  #nt-team-icon {
+}
+
+#nt-team-icon {
     width: 60px;
     height: 100%;
-  }
-  
-  #club-team-icon {
+}
+
+#club-team-icon {
     width: 60px;
-  }
-  
-  #team-icon-img {
-    width: 100%;
-    max-height: 120%;
-  }
-  
-  #name {
+}
+
+#name {
     width: 30%;
-  }
-  
-  #opponent {
+}
+
+#opponent {
     width: 40%;
-  }
-  
-  #gametime {
+}
+
+#gametime {
     width: 15%;
-  }
-  
-  #player-separator {
+}
+
+#player-separator {
     height: 10px;
-  }
-  
+}

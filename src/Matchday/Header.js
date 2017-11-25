@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         const {text, firstTab, secondTab} = this.props;
         return (
-            <div id="gameday-header-container">
+            <div id="matchday-header-container">
                 <div>
                     <text>{text}</text>
                     { firstTab ? <div className="header-tabs"><text>{firstTab}</text></div> : <div></div>}
