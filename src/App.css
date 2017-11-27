@@ -24,6 +24,14 @@
   to { transform: rotate(360deg); }
 }
 
+#gameday-header-container {
+  border-bottom: #dddddd solid 1px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 20px;
+  padding-top:10px;
+} 
+
 /* ================ General Components ===============*/
 /* General Header */
 
@@ -39,13 +47,6 @@
   margin-left: 45px;
 }
 
-#gameday-header-container {
-  border-bottom: #dddddd solid 1px;
-  margin-bottom: 10px;
-  width: 100%;
-  font-size: 20px;
-  padding-top:10px;
-} */
 
 /* ================= FollowedPlayer Component ================ */
 /* #player-container {
