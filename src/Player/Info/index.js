@@ -6,6 +6,7 @@ import './info.css'
 class PlayerInfo extends Component {
   render() {
     const playerData = this.props.playerData
+    console.log('data', playerData)
     return (
         <div>
           <Header text="Info" />

@@ -31,7 +31,10 @@ class Player extends Component {
         age: 19,
         height: '5 ft. 9 in.',
         weight: '155 lbs',
-        transferValue: '$20,000,000'
+        hometown: 'Hershey, Pennsylvania',
+        academy: 'Borussia Dortmund U17',
+        debut: 'March 17th, 2016',
+        transfer: '$20,000,000'
       },
       images: {
         player_image: 'pulisic.png',
