@@ -7,7 +7,7 @@ class Score extends Component {
     return (
         <div id="score" className="time-or-score">
             <div className="goals">{home}</div>
-            <div id="ongoing-time">{time}'</div>
+            <div id="ongoing-time">{time}</div>
             <div className="goals">{away}</div>
         </div>
     );

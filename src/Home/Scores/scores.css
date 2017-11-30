@@ -1,3 +1,33 @@
+/* ================== Header ================ */
+
+#scores-header {
+    width: 100%;
+    height: 30%;
+    background-color: #fde200;
+}
+
+#left-break {
+    height: 100%;
+    width: 100px;
+    float: left;
+}
+
+#league {
+    width: max-content;
+    height: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 0;
+}
+
+
+/* ================== Containers ================ */
+
+
 #scores-container {
     width: 100%;
     height: 100px;
@@ -8,12 +38,14 @@
     height: 70%;
     overflow-x: scroll;
     white-space: nowrap;
+    border-bottom: solid 1px #ddd;
 }
 
 #match-date {
     height: 100%;
     width: 100px;
     float: left;
+    border-top: solid 1px #f3f3f3;
 }
 
 #match-date-button {
@@ -21,7 +53,7 @@
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #fde200;
+    background-color: #f3f3f3;
     border-radius: 0;
     border: none;
     font-weight: 100;

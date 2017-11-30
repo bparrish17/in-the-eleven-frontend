@@ -9,7 +9,7 @@ class SingleScore extends Component {
     const { match } = this.props;
     return (
       <div id="single-score-container">
-        { match.ongoing
+        { match.played
             ? <Score home={match.home.goals} away={match.away.goals} time={match.time}/>
             : <Time time={match.time} />
         }
