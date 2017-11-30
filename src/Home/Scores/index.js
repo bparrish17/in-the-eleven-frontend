@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import MatchDate from './MatchDate'
 import SingleScore from './SingleScore'
+import ScoresHeader from './ScoresHeader'
 import './scores.css'
 
 class Scores extends Component {
@@ -21,13 +23,16 @@ class Scores extends Component {
             ongoing: false,
             time: '10:00 am'
         }
+        
     ]
     return (
       <div id="scores-container">
-        <div id="scores-header">
-        </div>
+        <ScoresHeader />
         <div id="scores-scroller">
-            { matches.map(match => <SingleScore match={match} />)}
+            <MatchDate date={'Today'}/>
+            <div id="single-scores">
+                { matches.map(match => <SingleScore match={match} />)}
+            </div>
         </div>
       </div>
     );

@@ -3,12 +3,31 @@
     height: 100px;
 }
 
-#scores-header {
-    width: 100%;
-    height: 30%;
-}
-
 #scores-scroller {
     width: 100%;
     height: 70%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#match-date {
+    height: 100%;
+    width: 100px;
+    float: left;
+}
+
+#match-date-button {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #fde200;
+    border-radius: 0;
+    border: none;
+    font-weight: 100;
+}
+
+#single-scores {
+    height: 100%;
+    float: left;
 }

@@ -6,9 +6,9 @@ class Score extends Component {
     const { home, away, time } = this.props;
     return (
         <div id="score" className="time-or-score">
-            <div>{home}</div>
+            <div className="goals">{home}</div>
             <div id="ongoing-time">{time}'</div>
-            <div>{away}</div>
+            <div className="goals">{away}</div>
         </div>
     );
   }

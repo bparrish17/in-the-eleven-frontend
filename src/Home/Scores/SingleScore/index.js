@@ -14,8 +14,8 @@ class SingleScore extends Component {
             : <Time time={match.time} />
         }
         <div id="team-container">
-            <SingleTeam name={match.home.name} img={match.home.img} />
-            <SingleTeam name={match.away.name} img={match.away.img} />
+            <SingleTeam home={true} name={match.home.name} img={match.home.img} />
+            <SingleTeam home={false} name={match.away.name} img={match.away.img} />
         </div>
       </div>
     );
