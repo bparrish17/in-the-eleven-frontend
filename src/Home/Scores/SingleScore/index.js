@@ -19,7 +19,13 @@ class SingleScore extends Component {
             <SingleTeam home={false} name={match.away.name} img={match.away.img} />
         </div>
         <div id="lineups-container">
-          <LineupPlayer name={"Christian Pulisic"} value={"Started"} />
+        <div id="lineups-header">
+
+        </div>
+          { match.home.lineup 
+            ? match.home.lineup.map(player => <LineupPlayer player={player.name} status={player.status} />)
+            : <div></div>
+          }
         </div>
       </div>
     );

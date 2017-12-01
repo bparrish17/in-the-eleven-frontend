@@ -4,8 +4,7 @@ import './singlescore.css';
 class SingleTeam extends Component {
   render() {
     const { home, name, img } = this.props;
-    let style
-    if(home) style = { borderBottom: "solid 0.5px #ddd" }
+    let style = home ? { borderBottom: "solid 0.5px #ddd" } : {}
     return (
         <div style={style} className="single-team">
             <div className="single-team-icon">
