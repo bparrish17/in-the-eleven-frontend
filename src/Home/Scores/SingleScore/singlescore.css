@@ -8,7 +8,7 @@
 
 #teams-container {
     float: left;
-    height: 35%;
+    height: 100%;
     width: 73%;
     border-right: solid 1px #ddd;
 }
@@ -31,12 +31,11 @@
 
 .time-or-score {
     float: left;
-    height: 35%;
+    height: 100%;
     width: 27%;
 }
 
 #time {
-    height: 35%;
     text-align: center;
     font-weight: 200;
     font-size: 12px;

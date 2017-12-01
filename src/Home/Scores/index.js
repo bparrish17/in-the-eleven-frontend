@@ -42,12 +42,7 @@ class Scores extends Component {
                     {leagues.map(league => <div id="league" className="btn" onClick={() => this.setState({league: league})}>{league}</div>)}
                 </div>
                 <div id="scores-scroller">
-                    <div id="scores-selectors">
-                        <MatchDate date={'Today'}/>
-                        <div id="in-the-eleven">
-
-                        </div>
-                    </div>
+                    <MatchDate date={'Today'}/>
                     <div id="single-scores">
                         { matches
                             .filter(match => this.filterLeague(match.league))

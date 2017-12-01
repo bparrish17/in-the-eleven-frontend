@@ -9,11 +9,11 @@ class Matchday extends Component {
   render() {
     return (
       <div id="matchday-container">
-        <div id="matchday-players">
-          <Header text="Players"/>
+        <div className="col-xs-6">
+          <Header text="My Players"/>
           {players.map(player => <FollowedPlayer key={player.id} player={player} />)}
         </div>
-        <div id="matchday-matches">
+        <div className="col-xs-6">
           <Header text="My Matches" />
           {matchdayMatches.map(match => <MatchContainer key={match.id} match={match} />)}
         </div>
