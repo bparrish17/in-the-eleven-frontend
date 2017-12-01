@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import MatchDate from './MatchDate'
 import SingleScore from './SingleScore'
+import * as images from '../../../src/testData';
 import './scores.css'
 
 class Scores extends Component {
@@ -15,65 +16,68 @@ class Scores extends Component {
             return true;
         }
     }
+
+
+
     render() {
-        const bvbImage = 'https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg'
-        const hsvImage = 'https://i.eurosport.com/_iss_/sport/football/club/logo/small/4202.png'
-        const nufcImage = 'https://cdn.thenovinatorcloud.com/Production/newcastle/WebImages/badges/club/128x128/62.png'
-        const nyrbImage = 'https://78.media.tumblr.com/avatar_3c2a542f43c3_128.png'
-        const aufcImage = 'aufc.png'
-        const mcfcImage = 'mancity.png'
-        const manuImage = 'manutd.png'
-        const wfcImage = 'watford.png'
-        const cfcImage = 'chelsea.png'
-        const efcImage = 'everton.png'
-        const afcImage = 'arsenal.png'
-        const lfcImage = 'liverpool.png'
         const leagues = ['All Leagues', 'Premier League', 'Bundesliga', 'Serie A', 'Major League Soccer', 'Liga MX', 'Championship', 'Champions League', 'Europa League']
         const matches = [
-            {
+            {   id: 1,
                 league: 'Bundesliga',
-                home: { name: 'Dortmund', img: bvbImage, goals: 2 },
-                away: { name: 'Hamburg', img: hsvImage, goals: 1 },
+                home: { name: 'Dortmund', img: images.bvbImage, goals: 2 },
+                away: { name: 'Hamburg', img: images.hsvImage, goals: 1 },
                 played: true,
                 time: 'FT'
             }, 
             {
+                id: 2,
                 league: 'Premier League',
-                home: { name: 'Newcastle', img: nufcImage, goals: 0 },
-                away: { name: 'Watford', img: wfcImage, goals: 0 },
+                home: { name: 'Newcastle', img: images.nufcImage, goals: 0 },
+                away: { name: 'Watford', img: images.wfcImage, goals: 0 },
                 played: false,
                 time: '10:00 am'
             },
             {
+                id: 3,
                 league: 'Major League Soccer',
-                home: { name: 'NY Red Bulls', img: nyrbImage, goals: 2 },
-                away: { name: 'Atlanta United', img: aufcImage, goals: 3 },
+                home: { name: 'NY Red Bulls', img: images.nyrbImage, goals: 2 },
+                away: { name: 'Atlanta United', img: images.aufcImage, goals: 3 },
                 played: true,
                 time: 'FT'
             },
             {
+                id: 4,
                 league: 'Premier League',
-                home: { name: 'Manchester City', img: mcfcImage, goals: 0 },
-                away: { name: 'Manchester Utd', img: manuImage, goals: 0 },
+                home: { name: 'Manchester City', img: images.mcfcImage, goals: 0 },
+                away: { name: 'Manchester Utd', img: images.manuImage, goals: 0 },
                 played: false,
                 time: '12:30 pm'
             },
             {
+                id: 5,
                 league: 'Premier League',
-                home: { name: 'Arsenal', img: afcImage, goals: 1 },
-                away: { name: 'Chelsea', img: cfcImage, goals: 4 },
+                home: { name: 'Arsenal', img: images.afcImage, goals: 1 },
+                away: { name: 'Chelsea', img: images.cfcImage, goals: 4 },
                 played: true,
                 time: 'FT'
             },
             {
+                id: 6,
                 league: 'Premier League',
-                home: { name: 'Everton', img: efcImage, goals: 2 },
-                away: { name: 'Liverpool', img: lfcImage, goals: 2 },
+                home: { name: 'Everton', img: images.efcImage, goals: 2 },
+                away: { name: 'Liverpool', img: images.lfcImage, goals: 2 },
+                played: true,
+                time: 'FT'
+            },
+            {
+                id: 7,
+                league: 'Bundesliga',
+                home: { name: 'Schalke 04', img: images.s04Image, goals: 1 },
+                away: { name: 'Bayern Munich', img: images.bmunImage, goals: 2 },
                 played: true,
                 time: 'FT'
             }
         ]
-        console.log(this.state.league)
         return (
             <div id="scores-container">
                 <div id="scores-header">
@@ -85,7 +89,10 @@ class Scores extends Component {
                     <div id="single-scores">
                         { matches
                             .filter(match => this.filterLeague(match.league))
-                            .map(match => <SingleScore match={match} />)
+                            .map(match => {
+                                console.log(match)
+                                return(<SingleScore key={match.id} match={match} />)
+                            })
                         }
                     </div>
                 </div>
