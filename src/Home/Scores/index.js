@@ -9,6 +9,7 @@ class Scores extends Component {
         super();
         this.state = { league: '' }
         this.filterLeague = this.filterLeague.bind(this)
+        this.sortByPlayed = this.sortByPlayed.bind(this)
     }
 
     filterLeague(league) {
@@ -17,7 +18,21 @@ class Scores extends Component {
         }
     }
 
-
+    sortByPlayed(matchA, matchB) {
+        const convertTime = (time) => {
+            let colon = time.indexOf(':')
+            let end = time.indexOf(' ');
+            let newTime = Number(time.slice(0, colon)*60) + Number(time.slice(colon+1,end))
+            return newTime;
+        }
+        if(matchA.played && matchB.played) return 0
+        else if(matchB.played) return -1
+        else if(matchA.played) return 1
+        else {
+            if(convertTime(matchA.time) > convertTime(matchB.time)) return 1
+            else return -1;
+        }
+    }
 
     render() {
         const leagues = ['All Leagues', 'Premier League', 'Bundesliga', 'Serie A', 'Major League Soccer', 'Liga MX', 'Championship', 'Champions League', 'Europa League']
@@ -42,8 +57,8 @@ class Scores extends Component {
                 league: 'Major League Soccer',
                 home: { name: 'NY Red Bulls', img: images.nyrbImage, goals: 2 },
                 away: { name: 'Atlanta United', img: images.aufcImage, goals: 3 },
-                played: true,
-                time: 'FT'
+                played: false,
+                time: '9:30 pm'
             },
             {
                 id: 4,
@@ -66,16 +81,16 @@ class Scores extends Component {
                 league: 'Premier League',
                 home: { name: 'Everton', img: images.efcImage, goals: 2 },
                 away: { name: 'Liverpool', img: images.lfcImage, goals: 2 },
-                played: true,
-                time: 'FT'
+                played: false,
+                time: '9:45 pm'
             },
             {
                 id: 7,
                 league: 'Bundesliga',
                 home: { name: 'Schalke 04', img: images.s04Image, goals: 1 },
                 away: { name: 'Bayern Munich', img: images.bmunImage, goals: 2 },
-                played: true,
-                time: 'FT'
+                played: false,
+                time: '9:30 am'
             }
         ]
         return (
@@ -89,6 +104,7 @@ class Scores extends Component {
                     <div id="single-scores">
                         { matches
                             .filter(match => this.filterLeague(match.league))
+                            .sort(this.sortByPlayed)
                             .map(match => {
                                 console.log(match)
                                 return(<SingleScore key={match.id} match={match} />)
