@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div id="page">
         <Home />
+        <Matchday />
       </div>
     );
   }
