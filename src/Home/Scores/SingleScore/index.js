@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SingleTeam from './SingleTeam'
 import Time from './Time'
 import Score from './Score'
+import LineupPlayer from './LineupPlayer'
 import './singlescore.css'
 
 class SingleScore extends Component {
@@ -13,9 +14,12 @@ class SingleScore extends Component {
             ? <Score home={match.home.goals} away={match.away.goals} time={match.time}/>
             : <Time time={match.time} />
         }
-        <div id="team-container">
+        <div id="teams-container">
             <SingleTeam home={true} name={match.home.name} img={match.home.img} />
             <SingleTeam home={false} name={match.away.name} img={match.away.img} />
+        </div>
+        <div id="lineups-container">
+          <LineupPlayer name={"Christian Pulisic"} value={"Started"} />
         </div>
       </div>
     );

@@ -4,22 +4,27 @@
     width: 220px;
     height: 100%;
     display: inline-block;
-    border: solid 1px #ddd;
-    border-left: none;
-    border-top: none;
-    border-bottom: none
 }
 
-#team-container {
+#teams-container {
     float: left;
-    height: 100%;
+    height: 35%;
     width: 73%;
+    border-right: solid 1px #ddd;
+}
+
+#lineups-container {
+    float: left;
+    height: 65%;
+    width: 100%;
+    border-right: solid 1px #ddd;
 }
 
 #team-list {
     height: 100%;
     margin-bottom: 0px;
 }
+
 
 /* ================== Time/Score Components ================ */
 
@@ -30,6 +35,7 @@
 }
 
 #time {
+    height: 35%;
     text-align: center;
     font-weight: 200;
     font-size: 12px;
@@ -38,7 +44,7 @@
 
 #ongoing-time {
     width: 50%;
-    height: 100%;
+    height: 35%;
     float: left;
     text-align: right;
     font-weight: 100;
@@ -81,4 +87,21 @@
     text-align: center;
     font-weight: 200;
     padding-top: 5%;
+}
+
+/* ================== LineupPlayer ================ */
+
+.lineup-player {
+    border: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.lineup-player :first-child {
+    float: left;
+}
+.lineup-player :last-child {
+    float: right;
 }
