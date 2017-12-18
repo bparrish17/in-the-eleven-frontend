@@ -79,7 +79,7 @@ export const matches = [
         home: { name: 'Everton', img: images.efcImage, goals: 2 },
         away: { name: 'Liverpool', img: images.lfcImage, goals: 2 },
         played: false,
-        time: '9:45 pm'
+        time: '9:45 am'
     },
     {
         id: 7,
