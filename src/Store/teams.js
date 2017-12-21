@@ -14,7 +14,12 @@ const teams = [];
 /**
  * ACTION CREATORS
  */
-const getTeams = teams => ({ type: GET_TEAMS, teams });
+const getTeams = teams => {
+    return { 
+        type: GET_TEAMS, 
+        teams 
+    }
+};
 
 /**
  * THUNK CREATORS
@@ -22,9 +27,7 @@ const getTeams = teams => ({ type: GET_TEAMS, teams });
 export const getTeamsThunk = () =>
   dispatch =>
     axios.get('/api/teams')
-      .then(res => {
-          console.log('data', res.data)
-      })
+      .then(res => res.data)
       .then(teams => {
         dispatch(getTeams(teams))
       })

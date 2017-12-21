@@ -13,7 +13,6 @@ const mapStateToProps = (state) => {
 
 class LineupPlayer extends Component {
   render() {
-    console.log('props', this.props)
     const { player, status } = this.props;
     return (
         <div className="lineup-player">

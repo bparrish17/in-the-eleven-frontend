@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import MatchDate from './MatchDate'
 import SingleScore from './SingleScore'
-
 import store from '../../../Store'
 import { getTeamsThunk } from '../../../Store/teams'
-
 import { images, leagues, matches } from '../../../../src/testData';
 import './scores.css'
 
@@ -16,6 +14,10 @@ class Scores extends Component {
         this.filterLeague = this.filterLeague.bind(this)
         this.sortByPlayed = this.sortByPlayed.bind(this)
         this.timeSort = this.timeSort.bind(this)
+    }
+
+    componentDidMount() {
+        this.props.getTeams()
     }
 
     filterLeague(league) {
@@ -49,7 +51,8 @@ class Scores extends Component {
     }
 
     render() {
-        console.log('hello', this.props)
+        const { teams } = this.props
+        console.log('teams', teams)
         return (
             <div id="scores-container">
                 <div id="scores-header">
@@ -59,6 +62,7 @@ class Scores extends Component {
                 <div id="scores-scroller">
                     <MatchDate date={'Today'}/>
                     <div id="single-scores">
+                        {/* teams.map(team => <SingleScore key={team.id} team={team} />) */}
                         { matches
                             .filter(match => this.filterLeague(match.league))
                             .sort(this.sortByPlayed)

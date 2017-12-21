@@ -24,3 +24,17 @@ class SingleScore extends Component {
 }
 
 export default SingleScore
+
+// const { team } = this.props
+// return (
+//   <div id="single-score-container">
+//     { match.played
+//         ? <Score home={match.home.goals} away={match.away.goals} time={match.time}/>
+//         : <Time time={match.time} />
+//     }
+//     <div id="teams-container">
+//         <SingleTeam home={true} name={team.name} img={team.crest_url} />
+//         <SingleTeam home={false} name={team.name} img={team.crest_url} />
+//     </div>
+//   </div>
+// )
