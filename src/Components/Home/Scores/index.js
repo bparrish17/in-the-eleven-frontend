@@ -1,21 +1,35 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux';
 import MatchDate from './MatchDate'
 import SingleScore from './SingleScore'
-import {images, leagues, matches} from '../../../src/testData';
+
+import store from '../../../Store'
+import { getTeamsThunk } from '../../../Store/teams'
+
+import { images, leagues, matches } from '../../../../src/testData';
 import './scores.css'
 
 class Scores extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = { league: '' }
         this.filterLeague = this.filterLeague.bind(this)
         this.sortByPlayed = this.sortByPlayed.bind(this)
+        this.timeSort = this.timeSort.bind(this)
     }
 
     filterLeague(league) {
         if(league === this.state.league || !this.state.league || this.state.league === 'All Leagues') {
             return true;
         }
+    }
+
+    timeSort() {
+        let times = matches
+            .map(match => match.time)
+            .filter(time => time !== 'FT')
+            .sort((a,b) => new Date('1970/01/01 ' + a) - new Date('1970/01/01 ' + b))
+        
     }
 
     sortByPlayed(matchA, matchB) {
@@ -35,6 +49,7 @@ class Scores extends Component {
     }
 
     render() {
+        console.log('hello', this.props)
         return (
             <div id="scores-container">
                 <div id="scores-header">
@@ -56,4 +71,18 @@ class Scores extends Component {
   }
 }
 
-export default Scores
+const mapStateToProps = (state, ownProps) => {
+    return {
+        teams: state.teams
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getTeams() {
+            dispatch(getTeamsThunk())
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Scores)

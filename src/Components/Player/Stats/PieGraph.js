@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './stats.css'
 import './pieGraph.css'
-import '../../App.css'
 
 class PieGraph extends Component {
     render() {

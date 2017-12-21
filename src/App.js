@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Matchday from './Matchday';
-import Player from './Player';
-import Home from './Home';
+import { Matchday, Player, Home } from './Components';
 import './App.css';
 
 class App extends Component {

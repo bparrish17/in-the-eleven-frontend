@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FollowedPlayer from './FollowedPlayer'
 import MatchContainer from './MatchContainer'
 import Header from './Header'
-import {images, players, matchdayMatches} from '../testData'
+import {images, players, matchdayMatches} from '../../testData'
 import './matchday.css'
 
 class Matchday extends Component {

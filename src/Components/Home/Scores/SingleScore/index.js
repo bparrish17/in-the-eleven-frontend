@@ -24,14 +24,3 @@ class SingleScore extends Component {
 }
 
 export default SingleScore
-
-
-// <div id="lineups-container">
-// <div id="lineups-header">
-
-// </div>
-//   { match.home.lineup 
-//     ? match.home.lineup.map(player => <LineupPlayer player={player.name} status={player.status} />)
-//     : <div></div>
-//   }
-// </div>
