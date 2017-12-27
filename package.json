@@ -24,6 +24,7 @@
     "wp": "webpack --config webpack.config.js",
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
+    "dev": "webpack-dev-server",
     "start": "react-scripts start",
     "start-dev": "npm run build-client-watch",
     "build": "react-scripts build",
@@ -39,6 +40,7 @@
     "file-loader": "^1.1.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   }
 }

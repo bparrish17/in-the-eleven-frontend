@@ -8,14 +8,14 @@ import './matchday.css'
 class Matchday extends Component {
   render() {
     return (
-      <div id="matchday-container">
-        <div className="col-xs-6">
-          <Header text="My Players"/>
-          {players.map(player => <FollowedPlayer key={player.id} player={player} />)}
-        </div>
-        <div className="col-xs-6">
+      <div>
+        <div id="my-matches" className="col-xs-7">
           <Header text="My Matches" />
           {matchdayMatches.map(match => <MatchContainer key={match.id} match={match} />)}
+        </div>
+        <div id="my-players" className="col-xs-4">
+          <Header text="My Players"/>
+          {players.map(player => <FollowedPlayer key={player.id} player={player} />)}
         </div>
       </div>
     );

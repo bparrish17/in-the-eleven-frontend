@@ -19,8 +19,14 @@
 
 /* ================== Matchday Component ================ */
 
-#matchday-container {
-    width: 100%
+#my-matches {
+    margin: 25px 12.5px 0px 30px;
+    font-weight: 900;
+}
+
+#my-players {
+    margin: 25px 0px 0px 12.5px;
+    font-weight: 900;
 }
 
 #matchday-players {
@@ -45,7 +51,7 @@
 
 /* ================== Match Component ================ */
 
-.match-container {
+#match-container {
     width: 100%;
 }
 
@@ -70,12 +76,11 @@
 }
 
 .team-name {
-    font-weight: 700;
+    font-weight: 100;
     width: 30%;
 }
 
 .team-lineup {
-    height: 40px;
     padding-left: 1%;
     padding-right: 1%;
     margin-bottom: 10px;
@@ -94,19 +99,23 @@
 
 
 .score {
-    width: 7.18%;
+    width: 6.18%;
     padding-top: 1%;
     font-size: 24px;
-    background-color: #dddddd;
+    font-weight: 500;
+    background-color: #f3f3f3;
+    border-right: none;
 }
 
 #match-time {
     text-align: center;
     width: 11.25%;
+    font-weight: 100;
 }
 
   
 /* ================= FollowedPlayer Component ================ */
+
 #player-container {
     width: 100%;
     height: 50px;
@@ -114,42 +123,42 @@
 
 .player-info {
     height: 100%;
-    font-size: 16px;
-    padding-top: 1.7%;
+    font-size: 14px;
+    padding-top: 4%;
     font-weight: 100;
 }
 
 #nt-team-icon {
-    width: 10%;
+    width: 15%;
     height: 100%;
 }
 
 #club-team-icon {
-    width: 10%;
+    width: 15%;
     height: 100%
 }
 
 #name {
-    width: 30%;
+    width: 32.5%;
     padding: 1%;
-    padding-top: 2.5%;
+    padding-top: 3.5%;
 }
 
 #opponent {
-    width: 36%;
-    font-weight: 100;
+    width: 32.5%;
+    font-weight: 500;
     font-size: 14px;
     padding: 1%;
-    padding-top: 2.5%;
+    padding-top: 3.5%;
 }
 
 #gametime {
-    width: 14%;
+    width: 20%;
     font-weight: 100;
     font-size: 14px;
     text-align: center;
     padding: 1%;
-    padding-top: 2.5%;
+    padding-top: 3.5%;
 }
 
 #player-separator {

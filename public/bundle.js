@@ -26962,6 +26962,7 @@ var SingleScore = function (_Component) {
   _createClass(SingleScore, [{
     key: 'render',
     value: function render() {
+      console.log("HELLO");
       var match = this.props.match;
 
       return _react2.default.createElement(
