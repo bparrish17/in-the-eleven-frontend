@@ -52,7 +52,7 @@ class Scores extends Component {
 
     render() {
         const { teams } = this.props
-        console.log('teams', teams)
+        // console.log('teams', teams)
         return (
             <div id="scores-container">
                 <div id="scores-header">

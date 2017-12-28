@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Matchday, Player, Home } from './Components';
+import { Matchday, Player, Home, League } from './Components';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div id="page">
         <Home />
-        <Matchday />
+        <League />
       </div>
     );
   }

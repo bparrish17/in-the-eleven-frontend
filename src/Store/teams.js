@@ -26,7 +26,7 @@ const getTeams = teams => {
  */
 export const getTeamsThunk = () =>
   dispatch =>
-    axios.get('http://intheeleven.com/api/teams')
+    axios.get('http://localhost:3000/api/teams')
       .then(res => res.data)
       .then(teams => {
         dispatch(getTeams(teams))

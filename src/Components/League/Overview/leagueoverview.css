@@ -1,0 +1,39 @@
+#league-header {
+    height: 260px;
+    max-width: 100%;
+    padding-left: 50px;
+    /* margin-bottom: 20px; */
+  }
+
+#league-image-container {
+    width: 20%;
+    float: left;
+}
+
+#league-image {
+
+}
+
+#league-overview {
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+#league-name.display-3 {
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#team-dropdown-button {
+    width: 150px;
+}
+
+#team-dropdown-menu {
+    position: absolute;
+    top: unset;
+    left: unset;
+    float: none;
+    width: 20%;
+}
