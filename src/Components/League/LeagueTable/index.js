@@ -8,7 +8,7 @@ class LeagueTable extends Component {
     render() {
         const { teams } = this.props;
         return (
-            <div id="league-table" className="col-xs-5">
+            <div id="league-table" className="col-5 col-sm-5">
                 <Header text="League Table" />
                 <TableHeader />
                 {teams.map((team, index)=> <TableTeam key={index} team={team} standing={index}/>)}

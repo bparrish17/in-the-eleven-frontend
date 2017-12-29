@@ -8,9 +8,9 @@ class LeaguePlayers extends Component {
     render() {
         const { teams } = this.props;
         return (
-            <div id="league-players-container" className="col-xs-6">
+            <div id="league-players-container" className="col-6 col-sm-6">
                 <Header text="Players" />
-                {leaguePlayers.map(player => <Player key={player.id} player={player}/>)}
+                {leaguePlayers.map(player => <Player key={player.id} player={player}/>) }
             </div>
         );
     }
