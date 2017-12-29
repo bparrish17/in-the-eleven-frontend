@@ -27,6 +27,13 @@ export const players = [
     { id: 5, name: 'Christian Atsu', team: "Newcastle United FC", teamImage: images.nufcImage, opp: 'Manchester City', gametime: '10:00 AM', status: 'Starting' },
     { id: 6, name: 'Tyler Adams', team: "New York Red Bulls", teamImage: images.nyrbImage, opp: 'Columbus Crew', gametime: '8:30 PM', status: 'Not in Lineup'}
 ]
+
+//League Players
+export const leaguePlayers = [
+    { id: 0, name: 'Christian Pulisic', team: "Borussia Dortmund", clubImg: images.bvbImage, natImg: 'usmnt.png', goals: 8, assists: 6 },
+    { id: 1, name: 'Bobby Wood', team: "Hamburger SV", clubImg: images.hsvImage, natImg: 'usmnt.png', goals: 8, assists: 6 }
+]
+
 const getLineup = (team) => players.filter(player => player.team === team)
 
 //Leagues

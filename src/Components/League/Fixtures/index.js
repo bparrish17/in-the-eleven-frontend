@@ -13,7 +13,7 @@ class Fixtures extends Component {
         return (
             <div id="fixtures-container" className="col-xs-8">
                 <Header text="Fixtures" />
-                { testMatches.map(match => <Fixture match={match} />)}
+                { testMatches.map((match, index) => <Fixture key={index} match={match} />)}
             </div>
         );
     }

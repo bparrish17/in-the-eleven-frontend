@@ -26,8 +26,8 @@ class TeamDropdown extends Component {
                 <ul id="team-dropdown-menu" className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     {teams.map(team => {
                         return (
-                            <li className="single-team-item">
-                                <a key={team.id} className="dropdown-item" href="#">{shorten(team.name)}</a>
+                            <li key={team.id} className="single-team-item">
+                                <a className="dropdown-item" href="#">{shorten(team.name)}</a>
                             </li>
                             )
                         })

@@ -4,6 +4,7 @@
     width: 100%;
     height: 30%;
     background-color: #fde200;
+    overflow-x: scroll;
 }
 
 

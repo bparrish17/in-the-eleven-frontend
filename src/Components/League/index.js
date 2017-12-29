@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import LeagueOverview from './Overview'
 import LeagueTable from './LeagueTable'
 import Fixtures from './Fixtures'
+import LeaguePlayers from './LeaguePlayers'
 
 class League extends Component {
   render() {
@@ -11,6 +12,7 @@ class League extends Component {
         <div>
             <LeagueOverview teams={teams} />
             <LeagueTable teams={teams} />
+            <LeaguePlayers />
             <Fixtures teams={teams}/>
         </div>
     );

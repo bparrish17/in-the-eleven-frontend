@@ -7,20 +7,20 @@ class TableTeam extends Component {
         return (
             <div id="table-team-container">
                 <div  className="table-club table-items">
-                    <div className="table-club-standing">{standing++}</div>
+                    <div className="table-club-standing">{standing+1}</div>
                     <div className="table-crest-container">
                         <img src={team.crest_url} className="table-crest img-fluid" alt="..."/>
                     </div>
                     <div className="table-club-name">{team.name}</div>
                 </div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
-                <div className="table-stats table-items">0</div>
+                <div className="table-stats table-items">33</div>
+                <div className="table-stats table-items">17</div>
+                <div className="table-stats table-items">10</div>
+                <div className="table-stats table-items">3</div>
+                <div className="table-stats table-items">4</div>
+                <div className="table-stats table-items">64</div>
+                <div className="table-stats table-items">45</div>
+                <div className="table-stats table-items">+19</div>
             </div>
         );
     }

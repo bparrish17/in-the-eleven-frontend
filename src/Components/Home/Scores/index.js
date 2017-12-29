@@ -57,7 +57,7 @@ class Scores extends Component {
             <div id="scores-container">
                 <div id="scores-header">
                     <div id="left-break"></div>
-                    {leagues.map(league => <div id="league" className="btn" onClick={() => this.setState({league: league})}>{league}</div>)}
+                    {leagues.map((league, idx) => <div key={idx} id="league" className="btn" onClick={() => this.setState({league: league})}>{league}</div>)}
                 </div>
                 <div id="scores-scroller">
                     <MatchDate date={'Today'}/>
