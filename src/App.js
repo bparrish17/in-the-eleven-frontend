@@ -13,7 +13,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('teamssss', this.props.teams)
     return (
       <Router history={history}>
         <div id="page">
