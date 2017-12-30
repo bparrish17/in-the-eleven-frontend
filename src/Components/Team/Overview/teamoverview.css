@@ -2,10 +2,12 @@
     height: 260px;
     max-width: 100%;
     padding-left: 50px;
+    background-color: #ececec
     /* height: 300px;
     max-width: 100%;
     padding: 40px 0px 40px 40px; */
   }
+
 
 #team-image-container {
     width: 20%;
@@ -27,6 +29,25 @@
 #team-name.display-3 {
     font-size: -webkit-xxx-large;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     margin-left: 20px;
+    margin-top: 0px;
+}
+
+#team-standing-header {
+    height: 20px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-bottom: 12px;
+}
+
+#team-standing-league {
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
 }

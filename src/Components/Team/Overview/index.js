@@ -11,6 +11,12 @@ class TeamOverview extends Component {
                 </div>
                 <div id="team-overview">
                     <h2 id="team-name" className="display-3">{team.name}</h2>
+                    <div id="team-standing-header">
+                        League Standing
+                    </div>
+                    <div id="team-standing-league">
+                        6
+                    </div>
                 </div>
             </div>
         );

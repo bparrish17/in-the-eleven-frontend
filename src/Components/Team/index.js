@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {getPlayersThunk} from '../../Store'
 import TeamOverview from './Overview'
 import Roster from './Roster'
+import UpcomingMatches from './Matches'
 
 class Team extends Component {
     componentDidMount() {
@@ -11,12 +12,12 @@ class Team extends Component {
     render() {
         const id = this.props.match.params.id
         let { teams, players } = this.props;
-        console.log('pls', players)
         let team = teams.find(team => team.id === Number(id))
         return (
             <div>
                 { team ? <TeamOverview team={team} /> : <div></div> }
                 { players && team ? <Roster players={players} teamImg={team.crest_url}/> : <div/>}
+                {team ? <UpcomingMatches team={team} /> : <div/>}
             </div>
         );
   }
