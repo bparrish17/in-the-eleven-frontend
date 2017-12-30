@@ -1,0 +1,78 @@
+/* Roster Player */
+#roster-container {
+    font-weight: 900;
+    margin-left: 25px;
+}
+
+.roster-player {
+    width: 100%;
+    height: 50px;
+    border: solid 1px #dddddd;
+    border-bottom: none;
+}
+
+.roster-player:last-child {
+    border-bottom: solid 1px#dddddd;
+}
+
+.player-items {
+    float: left;
+    height: 100%;
+    text-align: center;
+    border-left: solid 1px #dddddd;
+    color: black;
+    border-radius: 0%;
+}
+
+.first {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    border-left: none;
+}
+
+.last {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%; 
+}
+
+.rank {
+    width: 12.5%;
+    font-weight: 900;
+    padding-top: 12.5px;
+}
+
+.club-img {
+    width: 12.5%;
+    padding: 10px;
+}
+
+.nat-img {
+    width:10%;
+    padding: 10px;
+}
+
+
+.club-name {
+    width: 25%;
+    font-weight: 100;
+    padding-top: 12.5px;
+}
+
+.name {
+    width: 45%;
+    font-weight: 100;
+    padding-top: 12.5px;
+    color: black;
+}
+
+.stats {
+    width: 8%;
+    font-weight: 900;
+    padding-top: 12.5px;
+}
+
+.follow {
+    width: 30%;
+    text-align: center;
+    padding-top: 7px;
+}

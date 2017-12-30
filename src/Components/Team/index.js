@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {getPlayersThunk} from '../../Store'
 import TeamOverview from './Overview'
+import Roster from './Roster'
 
 class Team extends Component {
     componentDidMount() {
@@ -15,6 +16,7 @@ class Team extends Component {
         return (
             <div>
                 { team ? <TeamOverview team={team} /> : <div></div> }
+                { players && team ? <Roster players={players} teamImg={team.crest_url}/> : <div/>}
             </div>
         );
   }
