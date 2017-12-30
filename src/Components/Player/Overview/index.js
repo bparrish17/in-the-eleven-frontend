@@ -8,7 +8,7 @@ class PlayerHeader extends Component {
     return (
         <div id="player-header"className="jumbotron jumbotron-fluid">
             <div id="player-header-container" className="container">
-                <div id="player-image-container">
+                <div id="player-image-container" className="clearfix">
                     <img id="player-image" src={images.player_image} alt="..." />
                 </div>
                 <div id="player-info-container">

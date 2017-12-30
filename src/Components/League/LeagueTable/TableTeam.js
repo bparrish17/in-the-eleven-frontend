@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import './leaguetable.css';
 
 class TableTeam extends Component {
@@ -6,13 +7,15 @@ class TableTeam extends Component {
         let { team, standing } = this.props;
         return (
             <div id="table-team-container">
-                <div  className="table-club table-items">
-                    <div className="table-club-standing">{standing+1}</div>
-                    <div className="table-crest-container">
-                        <img src={team.crest_url} className="table-crest img-fluid" alt="..."/>
+                <Link to={`/teams/${team.id}`}>
+                    <div  className="table-club table-items">
+                        <div className="table-club-standing">{standing+1}</div>
+                        <div className="table-crest-container">
+                            <img src={team.crest_url} className="table-crest img-fluid" alt="..."/>
+                        </div>
+                        <div className="table-club-name">{team.name}</div>
                     </div>
-                    <div className="table-club-name">{team.name}</div>
-                </div>
+                </Link>
                 <div className="table-stats table-items">33</div>
                 <div className="table-stats table-items">17</div>
                 <div className="table-stats table-items">10</div>

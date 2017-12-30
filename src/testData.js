@@ -6,7 +6,7 @@ export const images = {
     nufcImage: 'https://cdn.thenovinatorcloud.com/Production/newcastle/WebImages/badges/club/128x128/62.png',
     nyrbImage: 'https://78.media.tumblr.com/avatar_3c2a542f43c3_128.png',
     aufcImage: 'aufc.png',
-    mcfcImage: 'mancity.png',
+    mcfcImage: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
     manuImage: 'manutd.png',
     wfcImage: 'watford.png',
     cfcImage: 'chelsea.png',
@@ -15,7 +15,8 @@ export const images = {
     lfcImage: 'liverpool.png',
     blkImage: 'bayerlev.png',
     s04Image: 'schalke04.png',
-    bmunImage: 'bayern.png'
+    bmunImage: 'bayern.png',
+    blgmImage: 'https://upload.wikimedia.org/wikipedia/en/f/f5/Belgium_urbsfa.png'
 }
 
 //Matchday Players 
@@ -30,8 +31,8 @@ export const players = [
 
 //League Players
 export const leaguePlayers = [
-    { id: 0, name: 'Christian Pulisic', team: "Borussia Dortmund", clubImg: images.bvbImage, natImg: 'usmnt.png', goals: 8, assists: 6 },
-    { id: 1, name: 'Bobby Wood', team: "Hamburger SV", clubImg: images.hsvImage, natImg: 'usmnt.png', goals: 8, assists: 6 }
+    { id: 0, name: 'DeAndre Yedlin', team: "Newcastle United FC", clubImg: images.nufcImage, natImg: 'usmnt.png', goals: 0, assists: 2, teamId: 67 },
+    { id: 1, name: 'Kevin De Bruyne', team: "Manchester City FC", clubImg: images.mcfcImage, natImg: images.blgmImage, goals: 12, assists: 9, teamId: 65 }
 ]
 
 const getLineup = (team) => players.filter(player => player.team === team)

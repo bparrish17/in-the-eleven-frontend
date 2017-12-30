@@ -16,10 +16,6 @@ class Scores extends Component {
         this.timeSort = this.timeSort.bind(this)
     }
 
-    componentDidMount() {
-        this.props.getTeams()
-    }
-
     filterLeague(league) {
         if(league === this.state.league || !this.state.league || this.state.league === 'All Leagues') {
             return true;
@@ -52,7 +48,6 @@ class Scores extends Component {
 
     render() {
         const { teams } = this.props
-        // console.log('teams', teams)
         return (
             <div id="scores-container">
                 <div id="scores-header">
@@ -81,12 +76,5 @@ const mapStateToProps = (state, ownProps) => {
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        getTeams() {
-            dispatch(getTeamsThunk())
-        }
-    }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Scores)
+export default connect(mapStateToProps)(Scores)

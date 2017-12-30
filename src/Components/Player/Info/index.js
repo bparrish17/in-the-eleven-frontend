@@ -11,8 +11,8 @@ class PlayerInfo extends Component {
           <Header text="Info" />
           <ul id="player-info-list" className="list-group">
             {
-              Object.keys(playerData).map(label => {
-                return <InfoItem key={playerData[label][1]} label={label[0].toUpperCase() + label.slice(1)} value ={playerData[label]} />
+              Object.keys(playerData).map((label, idx) => {
+                return <InfoItem key={idx} label={label[0].toUpperCase() + label.slice(1)} value ={playerData[label]} />
               })
             }
           </ul>

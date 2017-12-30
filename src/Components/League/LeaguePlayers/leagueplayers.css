@@ -18,6 +18,8 @@
     height: 100%;
     text-align: center;
     border-left: solid 1px #dddddd;
+    color: black;
+    border-radius: 0%;
 }
 
 .first {
@@ -40,13 +42,11 @@
 .club-img {
     width: 9%;
     padding: 10px;
-    border-radius: 0%;
 }
 
 .nat-img {
     width: 9%;
     padding: 10px;
-    border-radius: 0%;
 }
 
 
@@ -60,7 +60,7 @@
     width: 25%;
     font-weight: 100;
     padding-top: 12.5px;
-    border-radius: 0%;
+    color: black;
 }
 
 .stats {

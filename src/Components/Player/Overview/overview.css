@@ -53,3 +53,8 @@
     height: 80%;
     padding-right: 25px;
   }
+
+  @media screen and (max-width: 1000px) {
+    #player-image { display:none }
+    #player-info-container { overflow-x: hidden}
+}

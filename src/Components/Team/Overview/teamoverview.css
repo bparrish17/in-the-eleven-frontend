@@ -1,0 +1,32 @@
+#team-header {
+    height: 260px;
+    max-width: 100%;
+    padding-left: 50px;
+    /* height: 300px;
+    max-width: 100%;
+    padding: 40px 0px 40px 40px; */
+  }
+
+#team-image-container {
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#team-image {
+    height: 100%;
+}
+
+#team-overview {
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+#team-name.display-3 {
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}

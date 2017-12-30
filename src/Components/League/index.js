@@ -7,7 +7,6 @@ import LeaguePlayers from './LeaguePlayers'
 
 class League extends Component {
   render() {
-    console.log('params', this.props.match.params)
     let { teams } = this.props;
     return (
         <div>

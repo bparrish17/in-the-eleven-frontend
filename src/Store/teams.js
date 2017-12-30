@@ -21,6 +21,7 @@ const getTeams = teams => {
     }
 };
 
+
 /**
  * THUNK CREATORS
  */

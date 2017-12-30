@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import './leagueoverview.css';
 
 class TeamDropdown extends Component {
@@ -27,7 +28,7 @@ class TeamDropdown extends Component {
                     {teams.map(team => {
                         return (
                             <li key={team.id} className="single-team-item">
-                                <a className="dropdown-item" href="#">{shorten(team.name)}</a>
+                                <Link to={`/teams/${team.id}`}>{shorten(team.short_name)}</Link>
                             </li>
                             )
                         })

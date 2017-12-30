@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NavLink, Link} from 'react-router-dom';
 import './matchday.css';
 
 class FollowedPlayer extends Component {
@@ -14,7 +15,9 @@ class FollowedPlayer extends Component {
                     <li id="club-team-icon" className="btn list-group-item">
                         <img src={player.teamImage} className="team-icon-img img-fluid" alt="..."/>
                     </li>
-                    <li id="name"className="player-info btn list-group-item list-group-item-action">{player.name}</li>
+                    <li id="name" className="player-info btn list-group-item list-group-item-action">
+                        {player.name}
+                    </li>
                     <li id="opponent" className="player-info btn list-group-item">{player.status}</li>
                     <li id="gametime" className="player-info btn list-group-item">{player.gametime}</li>
                 </div>
