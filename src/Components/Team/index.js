@@ -17,7 +17,7 @@ class Team extends Component {
             <div>
                 { team ? <TeamOverview team={team} /> : <div></div> }
                 { players && team ? <Roster players={players} teamImg={team.crest_url}/> : <div/>}
-                {team ? <UpcomingMatches team={team} /> : <div/>}
+                { team ? <UpcomingMatches team={team} /> : <div/>}
             </div>
         );
   }
