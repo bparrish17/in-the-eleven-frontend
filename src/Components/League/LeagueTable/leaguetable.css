@@ -1,6 +1,8 @@
 #league-table {
     margin: 0px 12.5px 0px 30px;
     font-weight: 900;
+    background-color: white;
+    padding-bottom: 15px;
 }
 
 /* TableHeader */

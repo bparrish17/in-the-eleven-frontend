@@ -1,5 +1,8 @@
 #league-players-container {
     font-weight: 900;
+    background-color: white;
+    padding-bottom: 15px;
+    margin-left: 20px;
 }
 
 .player {

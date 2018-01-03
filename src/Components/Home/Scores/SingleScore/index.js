@@ -14,6 +14,7 @@ class SingleScore extends Component {
               ? <Score home={match.home.goals} away={match.away.goals} time={match.time}/>
               : <Time time={match.time} />
           */}
+          <Time time={'10:00 am'} />
           <div id="teams-container">
               <SingleTeam home={true} name={team.name} img={team.crest_url} />
               <SingleTeam home={false} name={team.name} img={team.crest_url} />

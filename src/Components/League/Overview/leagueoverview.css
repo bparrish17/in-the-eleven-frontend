@@ -2,7 +2,8 @@
     height: 260px;
     max-width: 100%;
     padding-left: 50px;
-    /* margin-bottom: 20px; */
+    background-color: #eee;
+    margin-bottom: 0px;
   }
 
 #league-image-container {
