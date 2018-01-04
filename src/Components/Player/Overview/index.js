@@ -7,7 +7,7 @@ class PlayerHeader extends Component {
     const images = this.props.images
     return (
         <div id="player-header"className="jumbotron jumbotron-fluid">
-            <div id="player-header-container" className="container">
+            <div id="player-header-container" className="container clearfix">
                 <div id="player-image-container" className="clearfix">
                     <img id="player-image" src={images.player_image} alt="..." />
                 </div>

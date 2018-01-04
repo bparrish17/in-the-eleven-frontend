@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Header from '../../Matchday/Header'
+import Fixture from '../../League/Fixtures/Fixture'
 import './matches.css';
 
 class Matches extends Component {
     render() {
         const { team } = this.props;
+        const match = { home: team, away: team, time: '9:00 am' }
         return (
             <div id="upcoming-matches-container" className="col-xs-6">
                 <Header text="Upcoming Matches" />
-                <div className="upcoming-single-match-container">
-                    
-                </div>
+                <Fixture match={match} />
             </div>
         );
     }

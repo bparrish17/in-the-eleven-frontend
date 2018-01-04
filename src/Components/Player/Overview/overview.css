@@ -27,7 +27,6 @@
   }
   
   #player-info-container {
-    float: left;
     margin-left: 45px;
     height: 100%;
   }
@@ -46,7 +45,6 @@
   #player-club-country {
     width: 100%;
     height: 40%;
-    float: left;
   }
   
   #player-club-country img {

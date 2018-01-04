@@ -3,6 +3,7 @@
     background-color: white;
     padding-bottom: 15px;
     margin-left: 20px;
+    min-width: 600px;
 }
 
 .player {

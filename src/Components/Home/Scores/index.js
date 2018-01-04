@@ -57,12 +57,12 @@ class Scores extends Component {
                 <div id="scores-scroller">
                     <MatchDate date={'Today'}/>
                     <div id="single-scores">
-                        { teams.map(team => <SingleScore key={team.id} team={team} />) }
-                        {/* matches
+                        {/* teams.map(team => <SingleScore key={team.id} team={team} />) */}
+                        { matches
                             .filter(match => this.filterLeague(match.league))
                             .sort(this.sortByPlayed)
                             .map(match => <SingleScore key={match.id} match={match} />)
-                        */}
+                        }
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PlayerOverview from './Overview'
 import PlayerStats from './Stats'
 import PlayerInfo from './Info'
+import './player.css'
 
 class Player extends Component {
   constructor() {

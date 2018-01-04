@@ -2,6 +2,7 @@
 #roster-container {
     font-weight: 900;
     margin-left: 25px;
+    min-width: 450px;
 }
 
 .roster-player {
@@ -24,6 +25,11 @@
     border-radius: 0%;
 }
 
+.roster-player-items>button {
+    font-weight: 100;
+    border-radius: 0;
+}
+
 .first {
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
@@ -31,8 +37,6 @@
 }
 
 .last {
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%; 
 }
 
 .roster-number {

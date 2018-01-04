@@ -1,6 +1,7 @@
 #upcoming-matches-container {
     font-weight: 900;
     margin-left: 25px;
+    min-width: 500px;
 }
 
 .upcoming-single-match-container {

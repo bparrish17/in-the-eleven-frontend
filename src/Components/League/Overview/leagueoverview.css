@@ -25,10 +25,17 @@
     font-size: -webkit-xxx-large;
     font-weight: 600;
     margin-bottom: 25px;
+    width: 600px;
 }
 
 #team-dropdown-button {
     width: 150px;
+    width: 150px;
+    background-color: #fde300;
+    font-weight: 100;
+    border: white;
+    border-radius: 0%;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
 }
 
 #team-dropdown-menu {
@@ -36,5 +43,8 @@
     top: unset;
     left: unset;
     float: none;
-    width: 20%;
+}
+
+.dropdown-menu>li>a {
+    font-weight: 100;
 }
