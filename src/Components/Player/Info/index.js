@@ -7,14 +7,15 @@ class PlayerInfo extends Component {
   render() {
     const {player, temp} = this.props
     const nationality = {...player.nationality}
+    const position = {...player.position}
     const age = getAge(player.date_of_birth)
-    console.log(age)
     return (
         <div>
           <Header text="Info" />
           <ul id="player-info-list" className="list-group">
-            <InfoItem label={'Age'} value={age} />
-            <InfoItem label={'Nation'} value={nationality.name} />
+            <InfoItem label='Age' value={age} />
+            <InfoItem label='Nation' value={nationality.name} />
+            <InfoItem label='Position' value={position.name} />
             {
               Object.keys(temp).map((label, idx) => {
                 return <InfoItem key={idx} label={label[0].toUpperCase() + label.slice(1)} value ={temp[label]} />

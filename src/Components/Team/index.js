@@ -4,6 +4,7 @@ import {getPlayersThunk} from '../../Store'
 import TeamOverview from './Overview'
 import Roster from './Roster'
 import UpcomingMatches from './Matches'
+import './team.css'
 
 class Team extends Component {
     componentDidMount() {
@@ -16,8 +17,10 @@ class Team extends Component {
         return (
             <div>
                 { team ? <TeamOverview team={team} /> : <div></div> }
-                { players && team ? <Roster players={players} teamImg={team.crest_url}/> : <div/>}
-                { team ? <UpcomingMatches team={team} /> : <div/>}
+                <div id="team-info" className="clearfix">
+                    { players && team ? <Roster players={players} /> : <div/>}
+                    { team ? <UpcomingMatches team={team} /> : <div/>}
+                </div>
             </div>
         );
   }

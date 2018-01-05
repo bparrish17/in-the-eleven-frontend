@@ -3,6 +3,8 @@
     font-weight: 900;
     margin-left: 25px;
     min-width: 450px;
+    background-color: white;
+    padding: 10px 25px 25px 25px;
 }
 
 .roster-player {
@@ -23,6 +25,7 @@
     border-left: solid 1px #dddddd;
     color: black;
     border-radius: 0%;
+    padding-top: 15px;
 }
 
 .roster-player-items>button {
@@ -42,12 +45,17 @@
 .roster-number {
     width: 12.5%;
     font-weight: 900;
-    padding-top: 12.5px;
 }
 
-.roster-club-img {
+.roster-position {
+    width: 12.5%;
+    font-weight: 100;
+}
+
+.roster-player-flag {
     width: 12.5%;
     padding: 10px;
+    border-left: none;
 }
 
 .roster-nat-img {
@@ -73,4 +81,16 @@
     width: 30%;
     text-align: center;
     padding-top: 9px;
+}
+
+#table-flag {
+    padding: 0px;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#table-nation {
+    font-weight: 100;
+    padding-top: 5%;
 }

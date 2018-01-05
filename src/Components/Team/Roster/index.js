@@ -5,11 +5,11 @@ import './roster.css'
 
 class Roster extends Component {
     render() {
-        const { players, teamImg } = this.props;
+        const { players } = this.props;
         return (
             <div id="roster-container" className="col-xs-5">
                 <Header text="Roster" />
-                { players.map(player => <RosterPlayer player={player} teamImg={teamImg}/>) }
+                { players.map((player, idx) => <RosterPlayer key={idx} player={player} />) }
             </div>
         );
     }
