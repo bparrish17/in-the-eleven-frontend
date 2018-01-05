@@ -25,8 +25,9 @@ class Player extends Component {
   }
 
   render() {
-    let player = this.props.player
-    console.log("p", player)
+    const { player, teams } = this.props
+    const teamId = this.props.match.params.teamId
+    let team = teams.find(team => team.id === Number(teamId))
     let chosenTeam = this.state.chosenTeam
     let chosenStats = chosenTeam + '_stats';
     let testPlayer = {
@@ -68,7 +69,7 @@ class Player extends Component {
     return (
         <div>
           {/* PlayerOverview Component at Top */}
-          <PlayerOverview overview={testPlayer.overview} images={testPlayer.images}/>
+          <PlayerOverview player={player} team={team}/>
 
           {/* Info Component in First Column */}
           <div className="player-columns col-xs-6">
@@ -96,6 +97,7 @@ class Player extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
+      teams: state.teams,
       player: state.singlePlayer
   }
 };

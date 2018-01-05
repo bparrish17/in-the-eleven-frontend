@@ -21,7 +21,9 @@ const getSinglePlayer = player => {
  */
 export const getSinglePlayerThunk = (teamId, playerId) =>
   dispatch =>
-    axios.get(`http://localhost:3000/api/teams/${teamId}/players/${playerId}`)
+    axios.get(`http://localhost:3000/api/teams/${teamId}/players/${playerId}`, {
+        headers: { 'Content-Type': 'application/json' }
+    })
       .then(res => res.data)
       .then(player => {
         dispatch(getSinglePlayer(player))
