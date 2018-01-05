@@ -12,6 +12,20 @@
     padding-right: 55px;
     height: 100%;
   }
+
+  #player-header-flag {
+    vertical-align: top;
+    height: 80%;
+    width: 80px;
+  }
+
+  #player-header-nation {
+    height: 80%;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+  }
   
   #player-image {
     border-radius: 50%;
@@ -49,7 +63,7 @@
   
   #player-club-country img {
     height: 80%;
-    padding-right: 25px;
+    margin-right: 25px;
   }
 
   @media screen and (max-width: 1000px) {

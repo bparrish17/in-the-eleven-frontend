@@ -16,6 +16,7 @@ class App extends Component {
     return (
       <Router history={history}>
         <div id="page">
+          
           <Home />
           <Switch>
             <Route exact path="/" component={Matchday} />

@@ -7,16 +7,20 @@ class PlayerHeader extends Component {
     const player = this.props.player
     let position = {...player.position}
     let nationality = {...player.nationality}
-    console.log('te', team)
+    let flag = nationality.iso_two_code ? ''.concat(nationality.iso_two_code).toLowerCase() : false
+    console.log('fla', flag)
     return (
         <div id="player-header"className="jumbotron jumbotron-fluid">
             <div id="player-header-container" className="container clearfix">
                 <div id="player-info-container">
                     <h2 id="player-name" className="display-3">{player.first_name + ' ' + player.last_name}</h2>
-                    <p>  <i>{player.number}</i> | {position.code} </p>
+                    <p>  <i># {player.number}</i> | {position.code} </p>
                     <div id="player-club-country">
                         <img src={team.crest_url} className="img-fluid" alt="..."/>
-                        <img src={''} className="img-fluid" alt="..."/>
+                        {flag 
+                            ? <div id="player-header-flag" className={"flag-icon flag-icon-" + flag}></div>
+                            : <div id="player-header-nation">{nationality.name}</div>
+                        }
                     </div>
                 </div>
             </div>
