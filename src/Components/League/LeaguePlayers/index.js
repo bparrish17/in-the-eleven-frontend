@@ -7,9 +7,7 @@ import './leagueplayers.css';
 class LeaguePlayers extends Component {
     constructor() {
         super();
-        this.state = {
-          chosenPlayers: 'all'
-        }
+        this.state = { chosenPlayers: 'all' }
         this.choosePlayers = this.choosePlayers.bind(this);
     }
     choosePlayers() {

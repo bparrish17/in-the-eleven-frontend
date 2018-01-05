@@ -14,6 +14,7 @@ class Team extends Component {
         const id = this.props.match.params.id
         let { teams, players } = this.props;
         let team = teams.find(team => team.id === Number(id))
+        if(team && team.name.slice(-2) === 'FC') team.name = team.name = team.name.slice(0, -3)
         return (
             <div>
                 { team ? <TeamOverview team={team} /> : <div></div> }

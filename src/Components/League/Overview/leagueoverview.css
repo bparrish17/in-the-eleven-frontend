@@ -4,15 +4,15 @@
     padding-left: 50px;
     background-color: #eee;
     margin-bottom: 0px;
-  }
+}
+
+#league-browse-container {
+
+}
 
 #league-image-container {
     width: 20%;
     float: left;
-}
-
-#league-image {
-
 }
 
 #league-overview {
@@ -27,13 +27,19 @@
     margin-bottom: 25px;
     width: 600px;
 }
+#team-dropdown {
+    width: fit-content;
+    display: inline-flex;
+    margin-right: 5px;
+}
+
 
 #team-dropdown-button {
     width: 150px;
     width: 150px;
     background-color: #fde300;
     font-weight: 100;
-    border: white;
+    border: solid 1px #cccccc;
     border-radius: 0%;
     box-shadow: 1px 1px 1px 1px #e6e6e6;
 }
@@ -47,4 +53,26 @@
 
 .dropdown-menu>li>a {
     font-weight: 100;
+}
+
+#player-search-bar {
+    vertical-align: top;
+    display: inline-flex;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    width: 250px;
+}
+
+#search-form {
+    border-radius: 0px;
+}
+
+#player-search-span {
+
+}
+
+#player-search-btn {
+    font-weight: 100;
+    background-color: #fde300;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    border-radius: 0px;
 }

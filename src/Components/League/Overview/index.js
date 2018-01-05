@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TeamDropdown from './TeamDropdown'
+import PlayerSearchBar from './PlayerSearch'
 import './leagueoverview.css';
 
 class LeagueOverview extends Component {
@@ -12,7 +13,10 @@ class LeagueOverview extends Component {
                 </div>
                 <div id="league-overview">
                     <h2 id="league-name" className="display-3">English Premier League</h2>
-                    <TeamDropdown teams={teams} />
+                    <div id="league-browse-container">
+                        <TeamDropdown teams={teams} />
+                        <PlayerSearchBar />
+                    </div>
                 </div>
             </div>
         );

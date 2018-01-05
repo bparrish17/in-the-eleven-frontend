@@ -9,6 +9,11 @@ import './league.css'
 class League extends Component {
   render() {
     let { teams } = this.props;
+    teams.map(team => {
+        if(team && team.name.slice(-2) === 'FC') {
+            team.name = team.name.slice(0, -3)
+        }
+    })
     return (
         <div>
             <LeagueOverview teams={teams} />

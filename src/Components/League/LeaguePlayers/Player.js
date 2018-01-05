@@ -5,6 +5,8 @@ import './leagueplayers.css';
 class Player extends Component {
     render() {
         const { player } = this.props;
+        const nationality = {...player.nationality}
+        let flag = nationality.iso_two_code ? ''.concat(nationality.iso_two_code).toLowerCase() : false
         return (
             <div className="player">
                 <div className="player-items rank first">{player.id+1}</div>
@@ -12,7 +14,10 @@ class Player extends Component {
                     <img src={player.clubImg} className="table-crest img-fluid" alt="..."/>
                 </div>
                 <div className="btn player-items nat-img">
-                    <img src={player.natImg} className="table-crest img-fluid" alt="..."/>
+                    {flag 
+                        ? <div id="table-flag" className={"flag-icon flag-icon-" + flag}></div>
+                        : <div id="table-nation">N/A</div>
+                    }
                 </div>
                 <Link to={`/player`}>
                     <div className="btn player-items name">{player.name}</div>

@@ -77,7 +77,7 @@
 
 .team-name {
     font-weight: 100;
-    width: 30%;
+    width: 28%;
 }
 
 .team-lineup {
@@ -100,16 +100,17 @@
 
 .score {
     width: 6.18%;
-    padding-top: 1%;
+    padding: 1%;
     font-size: 24px;
     font-weight: 500;
     background-color: #f3f3f3;
     border-right: none;
+    text-align: center;
 }
 
 #match-time {
     text-align: center;
-    width: 11.25%;
+    width: 15%;
     font-weight: 100;
 }
 
