@@ -5,20 +5,32 @@ import './info.css'
 
 class PlayerInfo extends Component {
   render() {
-    const playerData = this.props.playerData
+    const {player, temp} = this.props
+    const nationality = {...player.nationality}
+    const age = getAge(player.date_of_birth)
+    console.log(age)
     return (
         <div>
           <Header text="Info" />
           <ul id="player-info-list" className="list-group">
+            <InfoItem label={'Age'} value={age} />
+            <InfoItem label={'Nation'} value={nationality.name} />
             {
-              Object.keys(playerData).map((label, idx) => {
-                return <InfoItem key={idx} label={label[0].toUpperCase() + label.slice(1)} value ={playerData[label]} />
+              Object.keys(temp).map((label, idx) => {
+                return <InfoItem key={idx} label={label[0].toUpperCase() + label.slice(1)} value ={temp[label]} />
               })
             }
           </ul>
         </div>
     );
   }
+}
+
+const getAge = (birthDate) => {
+  let dob = new Date(birthDate)
+  let today = new Date
+  let timeDiff = Math.abs(today.getTime() - dob.getTime());
+  return Math.floor(Math.ceil(timeDiff / (1000 * 3600 * 24)) / 365); 
 }
 
 export default PlayerInfo;

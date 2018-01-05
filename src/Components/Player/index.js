@@ -38,7 +38,6 @@ class Player extends Component {
         nat_team: 'United States',
       },
       info: {
-        age: 19,
         height: '5 ft. 9 in.',
         weight: '155 lbs',
         hometown: 'Hershey, Pennsylvania',
@@ -73,7 +72,7 @@ class Player extends Component {
 
           {/* Info Component in First Column */}
           <div className="player-columns col-xs-6">
-            <PlayerInfo playerData={testPlayer.info}/>
+            <PlayerInfo player={player} temp={testPlayer.info}/>
           </div>
 
           {/* Stats Component in Second Column With Stateful Header */}

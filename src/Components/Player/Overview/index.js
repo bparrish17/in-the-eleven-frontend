@@ -8,7 +8,6 @@ class PlayerHeader extends Component {
     let position = {...player.position}
     let nationality = {...player.nationality}
     let flag = nationality.iso_two_code ? ''.concat(nationality.iso_two_code).toLowerCase() : false
-    console.log('fla', flag)
     return (
         <div id="player-header"className="jumbotron jumbotron-fluid">
             <div id="player-header-container" className="container clearfix">
