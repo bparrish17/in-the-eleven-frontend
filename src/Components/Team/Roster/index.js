@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../../Matchday/Header'
 import RosterPlayer from './RosterPlayer'
+import RosterHeader from './RosterHeader'
 import './roster.css'
 
 class Roster extends Component {

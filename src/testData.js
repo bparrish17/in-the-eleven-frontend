@@ -31,8 +31,8 @@ export const players = [
 
 //League Players
 export const leaguePlayers = [
-    { id: 0, name: 'DeAndre Yedlin', team: "Newcastle United FC", clubImg: images.nufcImage, natImg: 'usmnt.png', goals: 0, assists: 2, teamId: 67 },
-    { id: 1, name: 'Kevin De Bruyne', team: "Manchester City FC", clubImg: images.mcfcImage, natImg: images.blgmImage, goals: 12, assists: 9, teamId: 65 }
+    { id: 0, name: 'DeAndre Yedlin', team: "Newcastle United", clubImg: images.nufcImage, natImg: 'usmnt.png', goals: 0, assists: 2, teamId: 67 },
+    { id: 1, name: 'Kevin De Bruyne', team: "Manchester City", clubImg: images.mcfcImage, natImg: images.blgmImage, goals: 12, assists: 9, teamId: 65 }
 ]
 
 const getLineup = (team) => players.filter(player => player.team === team)

@@ -21,8 +21,8 @@ class League extends Component {
                 <div className="clearfix">
                     <LeagueTable teams={teams} />
                     <LeaguePlayers />
+                    <Fixtures teams={teams}/>
                 </div>
-                <Fixtures teams={teams}/>
             </div>
         </div>
     );

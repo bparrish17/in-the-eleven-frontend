@@ -1,5 +1,5 @@
 #league-info {
-    height: 2000px;
+    height: max-content;
     background-color: #eee;
     padding-top: 20px;
 }

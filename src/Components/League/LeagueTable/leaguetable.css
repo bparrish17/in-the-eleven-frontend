@@ -1,9 +1,9 @@
 #league-table {
-    margin: 0px 12.5px 15px 30px;
+    margin: 0px 2.5px 15px 30px;
     font-weight: 900;
     background-color: white;
     padding-bottom: 15px;
-    min-width: 500px;
+    min-width: 450px;
 }
 
 /* TableHeader */

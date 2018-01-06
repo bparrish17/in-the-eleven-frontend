@@ -25,9 +25,7 @@ class RosterPlayer extends Component {
                 <Link to={`/teams/${player.team_id}/players/${player.id}`}>
                     <div className="btn roster-player-items roster-name">{player.first_name + ' ' + player.last_name}</div>
                 </Link>
-                <div className="roster-player-items roster-follow last">
-                    <button type="button" className="btn btn-secondary">Follow</button>
-                </div>
+                <div className="btn roster-player-items roster-follow">Follow</div>
             </div>
         );
     }

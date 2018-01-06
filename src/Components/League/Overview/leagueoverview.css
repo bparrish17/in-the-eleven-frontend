@@ -46,9 +46,10 @@
 
 #team-dropdown-menu {
     position: absolute;
+    float: none;
     top: unset;
     left: unset;
-    float: none;
+    margin-top: 35px;
 }
 
 .dropdown-menu>li>a {
@@ -75,4 +76,8 @@
     background-color: #fde300;
     box-shadow: 1px 1px 1px 1px #e6e6e6;
     border-radius: 0px;
+}
+
+.btn:active:focus, .btn:focus {
+    outline: 0px;
 }
