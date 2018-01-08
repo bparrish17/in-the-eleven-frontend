@@ -4,20 +4,30 @@
     margin-right: 5%;
     margin-left: 5%;
   }
-  
+
+.player-columns {
+  width: 48%;
+  margin-left: 13px;
+  margin-right: 5px;
+}
+
+
+.info-item {
+  height: 40px;
+}
+
+.info-item :first-child {
+  float: left;
+  font-weight: 100;
+}
+.info-item :last-child {
+  float: right;
+}
+
+@media screen and (max-width: 425px) {
   .player-columns {
-    width: 48%;
-    margin-left: 13px;
-    margin-right: 5px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 1%;
   }
-  .info-item {
-    height: 40px;
-  }
-  
-  .info-item :first-child {
-    float: left;
-    font-weight: 100;
-  }
-  .info-item :last-child {
-    float: right;
-  }
+}

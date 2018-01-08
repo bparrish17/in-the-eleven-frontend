@@ -41,7 +41,7 @@
   }
   
   #player-info-container {
-    margin-left: 45px;
+    margin-left: 5%;
     height: 100%;
   }
   
@@ -66,7 +66,30 @@
     margin-right: 25px;
   }
 
-  @media screen and (max-width: 1000px) {
-    #player-image { display:none }
-    #player-info-container { overflow-x: hidden}
+@media screen and (max-width: 1000px) {
+  #player-image { display:none }
+  #player-info-container { overflow-x: hidden}
+}
+
+/* Mobile Downsizing */
+@media screen and (max-width: 425px) {
+  #player-info-container {
+    margin-left: 0px;
+  }
+  #player-name.display-3 {
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+  #player-info-container {
+    font-size: 24px;
+  }
+  #player-club-country img {
+    height: 60%;
+    margin-right: 25px;
+  }
+  #player-header-flag {
+    vertical-align: top;
+    height: 60%;
+    width: 60px;
+}
 }

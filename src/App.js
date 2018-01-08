@@ -19,7 +19,7 @@ class App extends Component {
           
           <Home />
           <Switch>
-            <Route exact path="/" component={Matchday} />
+            <Route exact path="/" component={League} />
             <Route exact path="/league" component={League} />
             <Route exact path="/teams/:teamId/players/:playerId" component={Player} />
             <Route exact path="/teams/:id" component={Team} />
