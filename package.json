@@ -13,6 +13,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-key-handler": "^1.0.0",
+    "react-media": "^1.6.1",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

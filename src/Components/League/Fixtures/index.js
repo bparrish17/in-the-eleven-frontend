@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fixture from './Fixture'
 import Header from '../../Matchday/Header'
+import { matches } from '../../../../src/testData';
 import './fixtures.css';
 
 class Fixtures extends Component {
@@ -13,7 +14,7 @@ class Fixtures extends Component {
         return (
             <div id="fixtures-container" className="col-xs-8">
                 <Header text="Fixtures" />
-                { testMatches.map((match, index) => <Fixture key={index} match={match} />)}
+                { matches.filter(match => match.league === 'Premier League').map((match, index) => <Fixture key={index} match={match} />)}
             </div>
         );
     }

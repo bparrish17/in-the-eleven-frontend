@@ -9,5 +9,12 @@
 @media screen and (max-width: 425px) {
     #fixtures-container {
         margin-left: 0px;
+        min-width: 0px;
+        width: 100%;
     }
+    #league-fixture-container {
+        height: 78px;
+        border-bottom: solid 1px #ddd;
+    }
+
 }
