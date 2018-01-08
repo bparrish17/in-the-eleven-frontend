@@ -5,3 +5,9 @@
     background-color: white;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 425px) {
+    #fixtures-container {
+        margin-left: 0px;
+    }
+}

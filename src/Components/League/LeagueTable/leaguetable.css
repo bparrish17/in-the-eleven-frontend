@@ -90,3 +90,44 @@
     margin-right: 0.6%;
     color: black;
 }
+
+@media screen and (max-width: 425px) {
+    #matchday-header-container {
+        padding-left: 1%;
+    }
+    #league-table {
+        margin: 0px 2.5px 15px 0px;
+        font-weight: 900;
+        background-color: white;
+        padding-bottom: 15px;
+        min-width: 100%;
+        padding: 5px 0px 5px 5px;
+    }
+    #header-club {
+        width: 57.5%;
+        padding-left: 1%;
+    }
+    #table-team-container {
+        padding-left: 1%;
+    }
+    .table-crest-container {
+        margin-left: 2%;
+    }
+    .table-club {
+        width: 57.5%;
+    }
+    .table-club-standing {
+        padding-left: 0%;
+        width: 7.5%;
+    }
+    .header-stats {
+        width: 7.5%;
+    }
+    .table-stats {
+        width: 7.5%;
+    }
+    .ignore-mobile {
+        display: none;
+        width: 0%
+    }
+}

@@ -21,9 +21,9 @@ class TableTeam extends Component {
                 <div className="table-stats table-items">10</div>
                 <div className="table-stats table-items">3</div>
                 <div className="table-stats table-items">4</div>
-                <div className="table-stats table-items">64</div>
-                <div className="table-stats table-items">45</div>
-                <div className="table-stats table-items">+19</div>
+                <div className="ignore-mobile table-stats table-items">64</div>
+                <div className="ignore-mobile table-stats table-items">45</div>
+                <div className="ignore-mobile table-stats table-items">+19</div>
             </div>
         );
     }

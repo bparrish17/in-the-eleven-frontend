@@ -10,10 +10,10 @@ class Player extends Component {
         return (
             <div className="player">
                 <div className="player-items rank first">{player.id+1}</div>
-                <div className="btn player-items club-img">
+                <div className="btn mobile-ignore player-items club-img">
                     <img src={player.clubImg} className="table-crest img-fluid" alt="..."/>
                 </div>
-                <div className="btn player-items nat-img">
+                <div className="mobile-ignore btn player-items nat-img">
                     {flag 
                         ? <div id="table-flag" className={"flag-icon flag-icon-" + flag}></div>
                         : <div id="table-nation">N/A</div>
@@ -25,9 +25,9 @@ class Player extends Component {
                 <Link to={`/teams/${player.teamId}`}>
                     <div className="btn player-items club-name">{player.team}</div>
                 </Link>
-                <div className="player-items stats">17</div>
-                <div className="player-items stats">6</div>
-                <div className="player-items stats last">3</div>
+                <div className="mobile-ignore player-items stats">17</div>
+                <div className="mobile-ignore player-items stats">6</div>
+                <div className="mobile-ignore player-items stats last">3</div>
             </div>
         );
     }

@@ -11,9 +11,9 @@ class TableHeader extends Component {
                 <div className="header-stats header-items">W</div>
                 <div className="header-stats header-items">D</div>
                 <div className="header-stats header-items">L</div>
-                <div className="header-stats header-items">GF</div>
-                <div className="header-stats header-items">GA</div>
-                <div className="header-stats header-items">GD</div>
+                <div className="ignore-mobile header-stats header-items">GF</div>
+                <div className="ignore-mobile header-stats header-items">GA</div>
+                <div className="ignore-mobile header-stats header-items">GD</div>
             </div>
         );
     }
