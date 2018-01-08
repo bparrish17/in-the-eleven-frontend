@@ -77,7 +77,7 @@
 @media screen and (max-width: 1068px) {
     #league-players-container {
         margin-left: 0px;
-        min-width: 400px;
+        min-width: 360px;
     }
     .mobile-ignore {
         display: none;

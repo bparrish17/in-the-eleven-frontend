@@ -28,15 +28,14 @@
     width: 600px;
 }
 #team-dropdown {
-    width: fit-content;
+    width: 150px;
     display: inline-flex;
     margin-right: 5px;
 }
 
 
 #team-dropdown-button {
-    width: 150px;
-    width: 150px;
+    width: 100%;
     background-color: #fde300;
     font-weight: 100;
     border: solid 1px #cccccc;
@@ -80,4 +79,30 @@
 
 .btn:active:focus, .btn:focus {
     outline: 0px;
+}
+
+@media screen and (max-width: 425px) {
+    #league-header {
+        padding-left: 25px;
+    }
+    #league-overview {
+        width: 100%;
+    }
+    #league-name.display-3 {
+        font-size: 36px;
+        margin-bottom: 12.5%;
+        width: 100%;
+    }
+    #team-dropdown {
+        width: 35%;
+        margin-right: 0px;
+    }
+
+    #player-search-bar {
+        vertical-align: top;
+        display: inline-flex;
+        box-shadow: 1px 1px 1px 1px #e6e6e6;
+        width: 50%;
+    }
+    
 }

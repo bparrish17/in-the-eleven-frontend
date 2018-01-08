@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TeamDropdown from './TeamDropdown'
 import PlayerSearchBar from './PlayerSearch'
+import Media from 'react-media';
 import './leagueoverview.css';
 
 class LeagueOverview extends Component {
@@ -8,7 +9,7 @@ class LeagueOverview extends Component {
         const { teams } = this.props;
         return (
             <div id="league-header"className="jumbotron jumbotron-fluid">
-                <div id="league-image-container">
+                <div id="league-image-container" className="ignore-mobile">
                     <img id="league-image" src='premierleague.png' alt="..." />
                 </div>
                 <div id="league-overview">

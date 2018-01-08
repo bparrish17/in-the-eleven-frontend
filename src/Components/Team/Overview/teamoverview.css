@@ -3,28 +3,23 @@
     max-width: 100%;
     padding-left: 50px;
     margin-bottom: 0px;
-    background-color: #ececec
-    /* height: 300px;
-    max-width: 100%;
-    padding: 40px 0px 40px 40px; */
+    background-color: #ececec;
   }
 
 
-#team-image-container {
+#team-image {
     width: 20%;
     height: 100%;
     float: left;
     text-align: center;
 }
 
-#team-image {
-    height: 100%;
-}
-
 #team-overview {
     float: left;
     width: 75%;
     height: 100%;
+    margin-left: 20px;
+    padding-top: 50px;
 }
 
 #team-name.display-3 {
@@ -37,18 +32,21 @@
 
 #team-standing-header {
     height: 20px;
-    width: 25%;
+    width: 150px;
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
+    margin-left: 20px;
     font-weight: 100;
     margin-bottom: 12px;
 }
 
 #team-standing-league {
-    width: 25%;
+    width: 150px;
     height: 80px;
     text-align: center;
     font-size: 36px;
     font-weight: 100;
+    margin-left: 20px;
+    margin-top: 20px;
 }
